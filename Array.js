@@ -80,9 +80,6 @@ const findCompany= itCompanies.find((n)=>{
 
 console.log(findCompany)
 
-
-
-
 // 14. Filter out companies which have more than one 'o' without the filter method
 
 //15. Sort the array using sort() method
@@ -93,15 +90,33 @@ console.log("Reverse the array:-", itCompanies.reverse());
 
 
 //17. Slice out the first 3 companies from the array
-console.log("Reverse the array:-", itCompanies.reverse());
+itCompanies.reverse()
 console.log("Slice out the first 3 companies:-", itCompanies.slice(0,3))
 //18. Slice out the last 3 companies from the array
 console.log("Slice out the last 3 companies:-", itCompanies.slice(itCompanies.length-3,itCompanies.length))
 
 //19. Slice out the middle IT company or companies from the array
 
+itCompanies.length % 2 == 0 ? console.log("Slice out the 3 middle IT company:-",itCompanies.slice(lengthItCompanies-1,lengthItCompanies+2)):
+console.log("Slice out the 3 middle IT company:-",itCompanies.slice((lengthItCompanies-0.5)-1,(lengthItCompanies-0.5)+2));
 
 //20. Remove the first IT company from the array
+console.log(itCompanies)
+
+console.log('Remove the first IT company from the array :-',itCompanies.shift())
+console.log("Remain array :-",itCompanies)
 //21. Remove the middle IT company or companies from the array
+let Remove = itCompanies.length/2
+
+console.log('Remove the Middle IT company from the array :-',itCompanies.splice(Math.round(Remove -1),1))
+console.log("Remain array :-",itCompanies)
+
 //22. Remove the last IT company from the array
+
+console.log("Remove the last IT company :-", itCompanies.pop() )
+console.log("Remain array :-",itCompanies)
+
 //23. Remove all IT companies
+console.log("Remove all IT Companies :-", itCompanies.splice(0,itCompanies.length));
+console.log("remove all  array :-",itCompanies)
+
